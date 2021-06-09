@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>ginoa's website</title>
+<meta name="description" content="マインクラフトアニメーションツール「Mine-imator」で使用する非公式の日本語ファイルの配布サイトです。" />
+
+<meta property="og:url" content="https://gin0492.github.io/gnozr/" />
+<meta property="og:title" content="ginoa's website" />
+<meta property="og:description" content="#" />
+<meta property="og:locale" content="ja_JP" />
+
+<link rel="canonical" href="https://gin0492.github.io/milanguage-ja/" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class="fade">
+<div class="contents">
+<img src="img/img1.gif" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+<h1>ぎのあ / ginoa</h1>
+<h2>contact</h2>
+<p>依頼等のお問い合わせは以下のメールアドレス、またはTwitterのダイレクトメッセージより受け付けております。</p>
+<p>ご依頼頂く際は上記ページをご一読いただいたうえでご連絡ください。</p>
+<p>【ご依頼を検討されている方】</p>
+<p>●イラストレーター様の確定、その他オリジナル素材が用意されている状態でのご依頼をお願いしております。​又ご依頼主様のイメージを共有するため、複数の画像資料もご用意ください。</p>
+<p>●ご予算に応じてご相談承っておりますが、ご依頼内容によってはご希望のご予算に応じられない場合がございますので予めご了承ください。</p>
+<a href="index.html" class="text">back to top</a>
+<div align="center">© 2021 ginoa</div>
+</div>
+</div>
+<script>
+function popupImage() {
+  var popup = document.getElementById('js-popup');
+  if(!popup) return;
+
+  var blackBg = document.getElementById('js-black-bg');
+  var closeBtn = document.getElementById('js-close-btn');
+  var showBtn = document.getElementById('js-show-popup');
+
+  closePopUp(blackBg);
+  closePopUp(closeBtn);
+  closePopUp(showBtn);
+  function closePopUp(elem) {
+    if(!elem) return;
+    elem.addEventListener('click', function() {
+      popup.classList.toggle('is-show');
+    });
+  }
+}
+popupImage();</script>
+</body>
+</html>

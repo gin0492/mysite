@@ -1,0 +1,207 @@
+body{
+user-select:none;
+-webkit-user-select:none;
+-ms-user-select: none;
+-moz-user-select:none;
+-khtml-user-select:none;
+-webkit-user-drag:none;
+-khtml-user-drag:none;
+}
+body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','BIZ UDGothic', sans-serif;
+    background-color: #181A1B;
+    color: #B9BBBE;
+}
+
+.contents {
+  margin: 5em auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.fade {
+   opacity: 0;
+   animation-name: fade;
+   animation-duration: 1.5s;
+   animation-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+   animation-fill-mode: forwards;
+}
+@keyframes fade {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+h1 {
+    font-weight: black;
+    position: relative;
+    font-size: 40px;
+    color: #f5f5f5;
+}
+
+h2 {
+    font-weight: bold;
+    position: relative;
+    font-size: 40px;
+    color: #f5f5f5;
+    border-bottom: solid 3px rgb(140, 140, 140);
+}
+
+h3:first-letter {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #7172ac;
+}
+
+.text {
+    font-weight: bold;
+    position: relative;
+    font-size: 40px;
+    color: #f5f5f5;
+}
+.red {
+  font-weight: black;
+  color: #ff6347;
+}
+.info {
+  margin: 0.5em 0;
+  color: #ff6347;
+  font-size: 18px;
+}
+.btn-yes {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #28abb9;
+  font-size: 16px;
+  color: #28abb9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 30px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.btn-yes:hover {
+  background-color: #28abb9;
+  border-color: #28abb9;
+  color: #FFF;
+}
+.btn-no {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #ff75a0;
+  font-size: 16px;
+  color: #ff75a0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 30px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.btn-no:hover {
+  background-color: #ff75a0;
+  border-color: #ff75a0;
+  color: #FFF;
+}
+
+.material-icons-round {
+    height: 23px;
+    vertical-align: bottom;
+    font-size: 25px;
+   
+    /* WebKitブラウザサポート */
+    -webkit-font-smoothing: antialiased;
+    /* Chrome、Safariサポート */
+    text-rendering: optimizeLegibility;
+   
+    /* Firefoxサポート */
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* IEサポート */
+    font-feature-settings: 'liga';
+
+}
+.material-icons-round.b {
+    height: 36px;
+    vertical-align: bottom;
+    font-size: 30px;
+}
+
+.btn-flat-border {
+  font-size: 19px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #2bb6c1;
+  border: solid 2px #2bb6c1;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #2bb6c1;
+  color: white;
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner img {
+  width: 100%;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
